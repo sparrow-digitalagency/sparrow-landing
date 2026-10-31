@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "title": "TODO(ru): page title",
+    "description": "TODO(ru): meta description"
+  },
+  "common": {
+    "brand": "Sparrow.Agency",
+    "skipToContent": "TODO(ru): skip to content",
+    "languageSwitcher": "TODO(ru): language switcher label",
+    "primaryNav": "TODO(ru): primary navigation label",
+    "ctaLead": "TODO(ru): primary CTA",
+    "ctaService": "TODO(ru): service CTA"
+  },
+  "nav": {
+    "services": "TODO(ru): nav: services",
+    "cases": "TODO(ru): nav: cases",
+    "whySparrow": "TODO(ru): nav: why Sparrow",
+    "process": "TODO(ru): nav: process",
+    "leadForm": "TODO(ru): nav: contact"
+  },
+  "sections": {
+    "hero": {
+      "title": "TODO(ru): hero title",
+      "subtitle": "TODO(ru): hero subtitle"
+    },
+    "taskSelector": {
+      "title": "С какой задачей вам помочь?"
+    },
+    "services": {
+      "title": "TODO(ru): services title"
+    },
+    "clients": {
+      "title": "TODO(ru): client logos title"
+    },
+    "cases": {
+      "title": "TODO(ru): cases title"
+    },
+    "whySparrow": {
+      "title": "TODO(ru): why Sparrow title"
+    },
+    "process": {
+      "title": "TODO(ru): process title"
+    },
+    "leadForm": {
+      "title": "TODO(ru): lead form title",
+      "placeholder": "TODO(ru): lead form is implemented in Stage 2"
+    }
+  },
+  "taskSelector": {
+    "options": {
+      "website": "Нужен сайт",
+      "ads": "Нужна реклама",
+      "social": "Нужно вести соцсети",
+      "search": "Хочу больше клиентов из Google и AI",
+      "turnkey": "Нужен маркетинг под ключ",
+      "consultation": "Нужна консультация"
+    },
+    "choices": {
+      "metaAds": "Meta Ads",
+      "googleAds": "Google Ads",
+      "adsConsultation": "TODO(ru): help me choose the channel"
+    }
+  },
+  "services": {
+    "websites": {
+      "name": "Websites",
+      "summary": "TODO(ru): Websites summary"
+    },
+    "metaAds": {
+      "name": "Meta Ads",
+      "summary": "TODO(ru): Meta Ads summary"
+    },
+    "googleAds": {
+      "name": "Google Ads",
+      "summary": "TODO(ru): Google Ads summary"
+    },
+    "smm": {
+      "name": "SMM",
+      "summary": "TODO(ru): SMM summary"
+    },
+    "seoGeo": {
+      "name": "SEO & GEO",
+      "summary": "TODO(ru): SEO & GEO summary"
+    },
+    "fullServiceDigital": {
+      "name": "Full-service Digital",
+      "summary": "TODO(ru): Full-service Digital summary"
+    }
+  },
+  "footer": {
+    "rights": "TODO(ru): all rights reserved"
+  },
+  "notFound": {
+    "title": "TODO(ru): page not found",
+    "backHome": "TODO(ru): back to home"
+  }
+}

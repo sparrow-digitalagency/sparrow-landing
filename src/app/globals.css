@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+/*
+ * Sparrow design tokens — BLACK / WHITE / LIME.
+ * Primary accent: #D8FA65.
+ *
+ * Contrast rule: lime is used on black backgrounds (or as a fill with black text).
+ * Lime text on white is not allowed (insufficient contrast).
+ */
+@theme {
+  /* Brand palette */
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-lime: #d8fa65;
+
+  /* Neutral support shades (for borders, muted text, surfaces) */
+  --color-ink-900: #0a0a0a;
+  --color-ink-800: #141414;
+  --color-ink-700: #262626;
+  --color-ink-500: #6b6b6b;
+  --color-ink-300: #bdbdbd;
+  --color-ink-100: #f2f2f2;
+
+  /* Semantic roles */
+  --color-surface: var(--color-black);
+  --color-surface-raised: var(--color-ink-800);
+  --color-surface-inverse: var(--color-white);
+  --color-content: var(--color-white);
+  --color-content-muted: var(--color-ink-300);
+  --color-content-inverse: var(--color-black);
+  --color-accent: var(--color-lime);
+  --color-on-accent: var(--color-black);
+  --color-line: var(--color-ink-700);
+
+  /* Typography (brand fonts to be provided; system stacks until then) */
+  --font-sans:
+    ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --font-display: var(--font-sans);
+
+  /* Layout */
+  --container-page: 80rem;
+  --spacing-gutter: 1rem;
+  --spacing-section: 6rem;
+
+  /* Radius */
+  --radius-card: 1.5rem;
+  --radius-pill: 999px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-content);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Keep anchored sections visible below the sticky header. */
+  section[id] {
+    scroll-margin-top: 5rem;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    background-color: var(--color-accent);
+    color: var(--color-on-accent);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
