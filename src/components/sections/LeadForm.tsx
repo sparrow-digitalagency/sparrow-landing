@@ -13,8 +13,8 @@ export function LeadForm() {
   const t = useTranslations("sections.leadForm");
 
   return (
-    <Section id="contact" title={t("title")}>
-      <p className="mt-6 text-content-muted">{t("placeholder")}</p>
+    <Section id="contact" surface="inverse" title={t("title")}>
+      <p className="mt-6 text-white/75">{t("placeholder")}</p>
     </Section>
   );
 }

@@ -1,57 +1,72 @@
 @import "tailwindcss";
 
 /*
- * Sparrow design tokens — BLACK / WHITE / LIME.
- * Primary accent: #D8FA65.
+ * Sparrow.Agency Visual Brand System — BLACK / WHITE / LIME.
+ * Light theme: white base, #F7F7F3 support surface, black contrast sections.
+ * Primary accent: #D8FA65 (lime).
  *
- * Contrast rule: lime is used on black backgrounds (or as a fill with black text).
- * Lime text on white is not allowed (insufficient contrast).
+ * Contrast rules:
+ * - Lime is used as a FILL (highlights, blocks, markers) with black text,
+ *   or as an accent on black. Lime text on white is not allowed.
+ * - Body text on white uses black or `content-muted` (#3A3A36, 11:1).
  */
 @theme {
   /* Brand palette */
   --color-black: #000000;
   --color-white: #ffffff;
   --color-lime: #d8fa65;
+  --color-mist: #f7f7f3;
 
-  /* Neutral support shades (for borders, muted text, surfaces) */
-  --color-ink-900: #0a0a0a;
-  --color-ink-800: #141414;
-  --color-ink-700: #262626;
-  --color-ink-500: #6b6b6b;
-  --color-ink-300: #bdbdbd;
-  --color-ink-100: #f2f2f2;
+  /* Neutral support shades */
+  --color-ink-700: #3a3a36;
+  --color-ink-500: #5f5f5a;
+  --color-ink-200: #dcdcd4;
+  --color-ink-100: #eaeae4;
 
   /* Semantic roles */
-  --color-surface: var(--color-black);
-  --color-surface-raised: var(--color-ink-800);
-  --color-surface-inverse: var(--color-white);
-  --color-content: var(--color-white);
-  --color-content-muted: var(--color-ink-300);
-  --color-content-inverse: var(--color-black);
+  --color-surface: var(--color-white);
+  --color-surface-muted: var(--color-mist);
+  --color-surface-inverse: var(--color-black);
+  --color-content: var(--color-black);
+  --color-content-muted: var(--color-ink-700);
+  --color-content-subtle: var(--color-ink-500);
+  --color-content-inverse: var(--color-white);
   --color-accent: var(--color-lime);
   --color-on-accent: var(--color-black);
-  --color-line: var(--color-ink-700);
+  --color-line: var(--color-ink-100);
+  --color-line-strong: var(--color-ink-200);
 
-  /* Typography (brand fonts to be provided; system stacks until then) */
-  --font-sans:
-    ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
-  --font-display: var(--font-sans);
+  /* Typography — Geologica (display) + Inter Tight (text), loaded via next/font */
+  --font-display: var(--font-geologica), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter-tight), ui-sans-serif, system-ui, sans-serif;
 
   /* Layout */
-  --container-page: 80rem;
-  --spacing-gutter: 1rem;
-  --spacing-section: 6rem;
+  --container-page: 80rem; /* 1280px content width (1440px with 80px gutters) */
+  --spacing-gutter: 1.25rem;
+  --spacing-section: 7.5rem;
 
   /* Radius */
-  --radius-card: 1.5rem;
   --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-float: 0 12px 28px -10px rgb(0 0 0 / 0.45);
 }
 
 @layer base {
   html {
     scroll-behavior: smooth;
-    color-scheme: dark;
+    color-scheme: light;
+    /* Hero punch line scale per language (longer words → smaller type). */
+    --hero-punch-scale: 1;
+  }
+  html:lang(en) {
+    --hero-punch-scale: 1.06;
+  }
+  html:lang(pl) {
+    --hero-punch-scale: 0.94;
+  }
+  html:lang(uk) {
+    --hero-punch-scale: 0.85;
   }
 
   body {
@@ -59,16 +74,18 @@
     color: var(--color-content);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
   }
 
   /* Keep anchored sections visible below the sticky header. */
   section[id] {
-    scroll-margin-top: 5rem;
+    scroll-margin-top: 5.5rem;
   }
 
   :focus-visible {
-    outline: 2px solid var(--color-accent);
-    outline-offset: 2px;
+    outline: 2px solid var(--color-black);
+    outline-offset: 3px;
+    box-shadow: 0 0 0 5px var(--color-lime);
   }
 
   ::selection {
@@ -80,5 +97,75 @@
     html {
       scroll-behavior: auto;
     }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /*
+   * Hero media: the image dissolves into the page background on the left and
+   * bottom edges instead of sitting in a hard rectangle.
+   */
+  .hero-media-fade {
+    -webkit-mask-image:
+      linear-gradient(to right, transparent 0, #000 24%),
+      linear-gradient(to bottom, #000 76%, transparent 100%);
+    -webkit-mask-composite: source-in;
+    mask-image:
+      linear-gradient(to right, transparent 0, #000 24%),
+      linear-gradient(to bottom, #000 76%, transparent 100%);
+    mask-composite: intersect;
+  }
+
+  .hero-media-fade-mobile {
+    -webkit-mask-image:
+      linear-gradient(to right, transparent 0, #000 14%),
+      linear-gradient(to bottom, #000 82%, transparent 100%);
+    -webkit-mask-composite: source-in;
+    mask-image:
+      linear-gradient(to right, transparent 0, #000 14%),
+      linear-gradient(to bottom, #000 82%, transparent 100%);
+    mask-composite: intersect;
+  }
+
+  /*
+   * TEMPORARY neutral image (light interior with window light).
+   * Replaced by a licensed photo via `src/config/media.ts`.
+   */
+  .hero-placeholder {
+    background-color: #eeebe5;
+    background-image:
+      linear-gradient(
+        112deg,
+        rgb(255 255 255 / 0) 34%,
+        rgb(255 255 255 / 0.75) 35%,
+        rgb(255 255 255 / 0.75) 47%,
+        rgb(255 255 255 / 0) 48%,
+        rgb(255 255 255 / 0) 54%,
+        rgb(255 255 255 / 0.5) 55%,
+        rgb(255 255 255 / 0.5) 62%,
+        rgb(255 255 255 / 0) 63%
+      ),
+      linear-gradient(
+        to bottom,
+        #f4f2ed 0%,
+        #e8e4dc 72%,
+        #d9d3c7 72.3%,
+        #e3ded4 100%
+      );
+  }
+
+  /* Hero punch line: fluid size, scaled per language. */
+  .hero-punch {
+    font-size: calc(
+      var(--hero-punch-scale) * clamp(3.75rem, 1.5rem + 6.6vw, 8.25rem)
+    );
+    line-height: 0.95;
+    letter-spacing: -0.045em;
   }
 }

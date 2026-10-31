@@ -8,8 +8,10 @@ import { TaskSelector } from "@/components/sections/TaskSelector";
 import { ServicesSection } from "@/components/sections/ServicesSection";
 import { ClientLogos } from "@/components/sections/ClientLogos";
 import { Cases } from "@/components/sections/Cases";
+import { ConsultationCta } from "@/components/sections/ConsultationCta";
 import { WhySparrow } from "@/components/sections/WhySparrow";
 import { Process } from "@/components/sections/Process";
+import { Faq } from "@/components/sections/Faq";
 import { LeadForm } from "@/components/sections/LeadForm";
 
 /** Section id → component. Order is defined in `src/config/sections.ts`. */
@@ -19,8 +21,10 @@ const sectionComponents: Record<SectionId, () => React.ReactNode> = {
   services: ServicesSection,
   clients: ClientLogos,
   cases: Cases,
+  consultation: ConsultationCta,
   "why-sparrow": WhySparrow,
   process: Process,
+  faq: Faq,
   contact: LeadForm,
 };
 

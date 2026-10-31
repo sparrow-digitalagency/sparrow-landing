@@ -1,28 +1,36 @@
 {
   "meta": {
-    "title": "TODO(pl): page title",
-    "description": "TODO(pl): meta description"
+    "title": "Sparrow.Agency — agencja digital pełnego cyklu",
+    "description": "Strony internetowe, Meta Ads, Google Ads, SMM, SEO & GEO i kompleksowy marketing — dla firm w Europie i Ukrainie."
   },
   "common": {
     "brand": "Sparrow.Agency",
-    "skipToContent": "TODO(pl): skip to content",
-    "languageSwitcher": "TODO(pl): language switcher label",
-    "primaryNav": "TODO(pl): primary navigation label",
-    "ctaLead": "TODO(pl): primary CTA",
+    "skipToContent": "Przejdź do treści",
+    "languageSwitcher": "Wybierz język",
+    "primaryNav": "Główna nawigacja",
+    "ctaLead": "Otrzymaj ofertę",
+    "menuOpen": "Otwórz menu",
+    "menuClose": "Zamknij menu",
+    "servicesNav": "Nasze usługi",
     "ctaService": "TODO(pl): service CTA"
   },
   "nav": {
-    "services": "TODO(pl): nav: services",
-    "cases": "TODO(pl): nav: cases",
-    "whySparrow": "TODO(pl): nav: why Sparrow",
-    "process": "TODO(pl): nav: process",
-    "leadForm": "TODO(pl): nav: contact"
+    "services": "Usługi",
+    "process": "Proces",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "eyebrow": "Agencja digital pełnego cyklu",
+    "setup": "Twojej firmie nie wystarczy sam marketing.",
+    "punchLead": "Potrzebuje",
+    "punchAccent": "systemu.",
+    "subtitle": "Strony internetowe, Meta Ads, Google Ads, SMM, SEO & GEO i kompleksowy marketing — dla firm w Europie i Ukrainie.",
+    "tagline": "Jeden zespół. Jeden system. Przejrzyste wyniki w liczbach.",
+    "ctaPrimary": "Otrzymaj ofertę",
+    "ctaSecondary": "Dobierz rozwiązanie do zadania",
+    "imageAlt": ""
   },
   "sections": {
-    "hero": {
-      "title": "TODO(pl): hero title",
-      "subtitle": "TODO(pl): hero subtitle"
-    },
     "taskSelector": {
       "title": "TODO(pl): task selector title"
     },
@@ -35,11 +43,17 @@
     "cases": {
       "title": "TODO(pl): cases title"
     },
+    "consultationCta": {
+      "title": "TODO(pl): consultation CTA title"
+    },
     "whySparrow": {
       "title": "TODO(pl): why Sparrow title"
     },
     "process": {
       "title": "TODO(pl): process title"
+    },
+    "faq": {
+      "title": "TODO(pl): FAQ title"
     },
     "leadForm": {
       "title": "TODO(pl): lead form title",

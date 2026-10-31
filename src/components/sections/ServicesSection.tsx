@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { services } from "@/config/services";
 import { Section } from "@/components/ui/Section";
-import { buttonStyles } from "@/components/ui/buttonStyles";
+import { buttonClass } from "@/components/ui/button";
 import { cn } from "@/components/ui/cn";
 import { leadHref } from "@/lib/lead/intent";
 
@@ -16,7 +16,7 @@ export function ServicesSection() {
   const t = useTranslations();
 
   return (
-    <Section id="services" title={t("sections.services.title")}>
+    <Section id="services" surface="muted" title={t("sections.services.title")}>
       <ol className="mt-12 flex flex-col">
         {services.map((service, index) => (
           <li
@@ -52,7 +52,7 @@ export function ServicesSection() {
               className={
                 service.featured
                   ? "rounded-pill bg-black px-6 py-3 text-sm font-semibold text-white"
-                  : buttonStyles("outline")
+                  : buttonClass("outline", "sm")
               }
             >
               {t("common.ctaService")}
