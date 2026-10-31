@@ -12,14 +12,6 @@ const nextConfig: NextConfig = {
       { source: "/en/:path*", destination: "/:path*", permanent: true },
     ];
   },
-  turbopack: {
-    rules: {
-      "*.css": {
-        loaders: ["@tailwindcss/turbopack"],
-        as: "*.css",
-      },
-    },
-  },
 };
 
 export default withNextIntl(nextConfig);

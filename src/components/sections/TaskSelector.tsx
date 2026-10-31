@@ -7,7 +7,7 @@ import {
   type TaskOptionItem,
 } from "@/config/task-selector";
 import { Section } from "@/components/ui/Section";
-import { buttonStyles } from "@/components/ui/buttonStyles";
+import { chipClass } from "@/components/ui/Chip";
 import { leadHref, serviceSectionHref } from "@/lib/lead/intent";
 
 function choiceHref(choice: TaskChoiceItem) {
@@ -31,18 +31,13 @@ export function TaskSelector() {
     if (target.kind === "choice") {
       return (
         <details className="group">
-          <summary
-            className={buttonStyles("outline", "cursor-pointer list-none")}
-          >
+          <summary className={chipClass(false, "cursor-pointer list-none")}>
             {label}
           </summary>
           <ul className="mt-3 flex flex-wrap gap-2">
             {target.choices.map((choice) => (
               <li key={choice.id}>
-                <Link
-                  href={choiceHref(choice)}
-                  className={buttonStyles("outline")}
-                >
+                <Link href={choiceHref(choice)} className={chipClass()}>
                   {t(`taskSelector.choices.${choice.messageKey}`)}
                 </Link>
               </li>
@@ -58,7 +53,7 @@ export function TaskSelector() {
         : leadHref(target.intent);
 
     return (
-      <Link href={href} className={buttonStyles("outline")}>
+      <Link href={href} className={chipClass()}>
         {label}
       </Link>
     );

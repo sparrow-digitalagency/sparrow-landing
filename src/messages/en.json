@@ -1,28 +1,36 @@
 {
   "meta": {
-    "title": "TODO(en): page title",
-    "description": "TODO(en): meta description"
+    "title": "Sparrow.Agency — full-cycle digital agency",
+    "description": "Websites, Meta Ads, Google Ads, SMM, SEO & GEO and full-service marketing for businesses across Europe and Ukraine."
   },
   "common": {
     "brand": "Sparrow.Agency",
-    "skipToContent": "TODO(en): skip to content",
-    "languageSwitcher": "TODO(en): language switcher label",
-    "primaryNav": "TODO(en): primary navigation label",
-    "ctaLead": "TODO(en): primary CTA",
+    "skipToContent": "Skip to content",
+    "languageSwitcher": "Choose language",
+    "primaryNav": "Main navigation",
+    "ctaLead": "Get a proposal",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "servicesNav": "Our services",
     "ctaService": "TODO(en): service CTA"
   },
   "nav": {
-    "services": "TODO(en): nav: services",
-    "cases": "TODO(en): nav: cases",
-    "whySparrow": "TODO(en): nav: why Sparrow",
-    "process": "TODO(en): nav: process",
-    "leadForm": "TODO(en): nav: contact"
+    "services": "Services",
+    "process": "Process",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "eyebrow": "Full-cycle digital agency",
+    "setup": "Your business needs more than marketing.",
+    "punchLead": "It needs a",
+    "punchAccent": "system.",
+    "subtitle": "Websites, Meta Ads, Google Ads, SMM, SEO & GEO and full-service marketing for businesses across Europe and Ukraine.",
+    "tagline": "One team. One system. Clear performance data.",
+    "ctaPrimary": "Get a proposal",
+    "ctaSecondary": "Find the right solution",
+    "imageAlt": ""
   },
   "sections": {
-    "hero": {
-      "title": "TODO(en): hero title",
-      "subtitle": "TODO(en): hero subtitle"
-    },
     "taskSelector": {
       "title": "TODO(en): task selector title"
     },
@@ -35,11 +43,17 @@
     "cases": {
       "title": "TODO(en): cases title"
     },
+    "consultationCta": {
+      "title": "TODO(en): consultation CTA title"
+    },
     "whySparrow": {
       "title": "TODO(en): why Sparrow title"
     },
     "process": {
       "title": "TODO(en): process title"
+    },
+    "faq": {
+      "title": "TODO(en): FAQ title"
     },
     "leadForm": {
       "title": "TODO(en): lead form title",

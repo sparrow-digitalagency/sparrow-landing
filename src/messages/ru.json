@@ -1,28 +1,36 @@
 {
   "meta": {
-    "title": "TODO(ru): page title",
-    "description": "TODO(ru): meta description"
+    "title": "Sparrow.Agency — digital-агентство полного цикла",
+    "description": "Сайты, Meta Ads, Google Ads, SMM, SEO & GEO и комплексный маркетинг — для бизнеса в Европе и Украине."
   },
   "common": {
     "brand": "Sparrow.Agency",
-    "skipToContent": "TODO(ru): skip to content",
-    "languageSwitcher": "TODO(ru): language switcher label",
-    "primaryNav": "TODO(ru): primary navigation label",
-    "ctaLead": "TODO(ru): primary CTA",
+    "skipToContent": "Перейти к содержанию",
+    "languageSwitcher": "Выбрать язык",
+    "primaryNav": "Главная навигация",
+    "ctaLead": "Получить предложение",
+    "menuOpen": "Открыть меню",
+    "menuClose": "Закрыть меню",
+    "servicesNav": "Наши услуги",
     "ctaService": "TODO(ru): service CTA"
   },
   "nav": {
-    "services": "TODO(ru): nav: services",
-    "cases": "TODO(ru): nav: cases",
-    "whySparrow": "TODO(ru): nav: why Sparrow",
-    "process": "TODO(ru): nav: process",
-    "leadForm": "TODO(ru): nav: contact"
+    "services": "Услуги",
+    "process": "Процесс",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "eyebrow": "Digital-агентство полного цикла",
+    "setup": "Вашему бизнесу нужен не просто маркетинг.",
+    "punchLead": "Ему нужна",
+    "punchAccent": "система.",
+    "subtitle": "Сайты, Meta Ads, Google Ads, SMM, SEO & GEO и комплексный маркетинг — для бизнеса в Европе и Украине.",
+    "tagline": "Одна команда. Одна система. Прозрачный результат в цифрах.",
+    "ctaPrimary": "Получить предложение",
+    "ctaSecondary": "Подобрать решение под задачу",
+    "imageAlt": ""
   },
   "sections": {
-    "hero": {
-      "title": "TODO(ru): hero title",
-      "subtitle": "TODO(ru): hero subtitle"
-    },
     "taskSelector": {
       "title": "С какой задачей вам помочь?"
     },
@@ -35,11 +43,17 @@
     "cases": {
       "title": "TODO(ru): cases title"
     },
+    "consultationCta": {
+      "title": "TODO(ru): consultation CTA title"
+    },
     "whySparrow": {
       "title": "TODO(ru): why Sparrow title"
     },
     "process": {
       "title": "TODO(ru): process title"
+    },
+    "faq": {
+      "title": "TODO(ru): FAQ title"
     },
     "leadForm": {
       "title": "TODO(ru): lead form title",
