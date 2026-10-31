@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "title": "TODO(en): page title",
+    "description": "TODO(en): meta description"
+  },
+  "common": {
+    "brand": "Sparrow.Agency",
+    "skipToContent": "TODO(en): skip to content",
+    "languageSwitcher": "TODO(en): language switcher label",
+    "primaryNav": "TODO(en): primary navigation label",
+    "ctaLead": "TODO(en): primary CTA",
+    "ctaService": "TODO(en): service CTA"
+  },
+  "nav": {
+    "services": "TODO(en): nav: services",
+    "cases": "TODO(en): nav: cases",
+    "whySparrow": "TODO(en): nav: why Sparrow",
+    "process": "TODO(en): nav: process",
+    "leadForm": "TODO(en): nav: contact"
+  },
+  "sections": {
+    "hero": {
+      "title": "TODO(en): hero title",
+      "subtitle": "TODO(en): hero subtitle"
+    },
+    "taskSelector": {
+      "title": "TODO(en): task selector title"
+    },
+    "services": {
+      "title": "TODO(en): services title"
+    },
+    "clients": {
+      "title": "TODO(en): client logos title"
+    },
+    "cases": {
+      "title": "TODO(en): cases title"
+    },
+    "whySparrow": {
+      "title": "TODO(en): why Sparrow title"
+    },
+    "process": {
+      "title": "TODO(en): process title"
+    },
+    "leadForm": {
+      "title": "TODO(en): lead form title",
+      "placeholder": "TODO(en): lead form is implemented in Stage 2"
+    }
+  },
+  "taskSelector": {
+    "options": {
+      "website": "TODO(en): need a website",
+      "ads": "TODO(en): need advertising",
+      "social": "TODO(en): need social media management",
+      "search": "TODO(en): more clients from Google and AI",
+      "turnkey": "TODO(en): turnkey marketing",
+      "consultation": "TODO(en): need a consultation"
+    },
+    "choices": {
+      "metaAds": "Meta Ads",
+      "googleAds": "Google Ads",
+      "adsConsultation": "TODO(en): help me choose the channel"
+    }
+  },
+  "services": {
+    "websites": {
+      "name": "Websites",
+      "summary": "TODO(en): Websites summary"
+    },
+    "metaAds": {
+      "name": "Meta Ads",
+      "summary": "TODO(en): Meta Ads summary"
+    },
+    "googleAds": {
+      "name": "Google Ads",
+      "summary": "TODO(en): Google Ads summary"
+    },
+    "smm": {
+      "name": "SMM",
+      "summary": "TODO(en): SMM summary"
+    },
+    "seoGeo": {
+      "name": "SEO & GEO",
+      "summary": "TODO(en): SEO & GEO summary"
+    },
+    "fullServiceDigital": {
+      "name": "Full-service Digital",
+      "summary": "TODO(en): Full-service Digital summary"
+    }
+  },
+  "footer": {
+    "rights": "TODO(en): all rights reserved"
+  },
+  "notFound": {
+    "title": "TODO(en): page not found",
+    "backHome": "TODO(en): back to home"
+  }
+}
